@@ -5,6 +5,7 @@ This repo is intended to collect and discuss all coding and design guidelines fo
 ## Guidelines
 - Code Style
 - Design and Architecture of code and projects
+- [Setup a project](guidelines/project-setup.md)
 
 ## Checklists
 - [Checklist for launching new projects](Checklists/Launch-Checklist.md)
