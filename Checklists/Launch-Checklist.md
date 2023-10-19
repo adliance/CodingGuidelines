@@ -1,6 +1,8 @@
 # Launch Checklist
 This should provide a simple checklist of all things that should be checked before a project is completed and launched.
 
+## Allgemein
+- Die Anwendung lokal mit Umgebungsvariable `"ASPNETCORE_ENVIRONMENT": "Production"` starten und ausprobieren
 
 ## Web Projects
 - Cache Busting berücksichtigt
@@ -27,8 +29,4 @@ This should provide a simple checklist of all things that should be checked befo
 - Azure Konfiguration korrekt
 - Backups eingerichtet
 - HTTPS richtig konfiguriert
-
-
-
-
 
