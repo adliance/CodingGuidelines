@@ -15,14 +15,22 @@
 The project structure would look like:
 ```
 src/
-├───Adliance.Project
+├── Adliance.Project
 test/
-├───Adliance.Project.Tests
+├── Adliance.Project.Tests
 docs/
 readme.md
 .editorconfig
 .gitignore
 ```
+
+### Configure Azure DevOps Pull Request checklists
+
+A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation.
+
+Use the [.azuredevops](../.azuredevops) folder in this repository as a template.
+
+More information see [Pull Request templates](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-templates?view=azure-devops).
 
 ## Setup a .NET project
 
