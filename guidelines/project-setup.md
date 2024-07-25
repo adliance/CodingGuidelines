@@ -7,7 +7,7 @@
   - How to run the projects
   - Include the build pipeline status images 
 - Use an editor config file //TODO Reference to Adliance `.editorconfig`
-- Use a `.gitingore` file
+- Use a `.gitignore` file
 - Create a `src` folder for source projects.
 - Create a `test` folder for test projects
 - Create a `docs` folder for documentation. Write documentation in markup.
@@ -37,13 +37,12 @@ More information see [Pull Request templates](https://learn.microsoft.com/en-us/
 - Use the latest .NET Version
 - Enable nullability
 - Enable implicit usings
-- Treat warnings as errors
 - Generate documentation files in WebAPI projects
+- Add Adliance.Buddy.CodeStyle
 
 ```xml
 <Nullable>enable</Nullable>
 <ImplicitUsings>enable</ImplicitUsings>
-<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 <GenerateDocumentationFile>true</GenerateDocumentationFile>
 ```
 
