@@ -57,21 +57,20 @@ namespace RdaWeb.Blazor.Components;
 /// </summary>
 public abstract class ComponentWithCancellationTokenBase : ComponentBase, IDisposable
 {
-    private CancellationTokenSource? _cancellationTokenSource;
+    private readonly CancellationTokenSource _cancellationTokenSource;
 
-    protected CancellationToken ComponentCancellationToken =>
-        (_cancellationTokenSource ??= new CancellationTokenSource()).Token;
+    protected ComponentWithCancellationTokenBase()
+    {
+        _cancellationTokenSource = new CancellationTokenSource();
+        ComponentCancellationToken = _cancellationTokenSource.Token;
+    }
+
+    protected CancellationToken ComponentCancellationToken { get; }
 
     public virtual void Dispose()
     {
-        if (_cancellationTokenSource == null)
-        {
-            return;
-        }
-
         _cancellationTokenSource.Cancel();
         _cancellationTokenSource.Dispose();
-        _cancellationTokenSource = null;
         GC.SuppressFinalize(this);
     }
 }
