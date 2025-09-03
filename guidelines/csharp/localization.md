@@ -4,8 +4,9 @@ Most useful information is documented by Microsoft https://learn.microsoft.com/e
 
 ## Localization arguments
 
+Create a text about dinner pricing at some point of time.
 ```csharp
-LocalizedString localizedString = _localizer["GreetingMessage", dateTime, dinnerPrice];
+LocalizedString localizedString = _localizer["DinnerPriceFormat", dateTime, dinnerPrice];
 ```
 
 All arguments of a Localization resource shall be described in the comment section of the default resource file.
