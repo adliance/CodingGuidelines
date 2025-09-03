@@ -4,6 +4,7 @@ This repo is intended to collect and discuss all coding and design guidelines fo
 
 ## Guidelines
 - [Code Style](guidelines/dotnet-code-styles.md)
+- [Localization](guidelines/csharp/localization.md)
 - Design and Architecture of code and projects
 - [GIT](guidelines/git.md)
 - [Setup a project](guidelines/project-setup.md)
